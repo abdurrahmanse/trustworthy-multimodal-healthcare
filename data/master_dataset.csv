@@ -1,0 +1,6 @@
+patient_id,age,gender,visit_date,medical_history,lab_results,imaging_data,diagnosis,severity
+P001,45,M,2024-01-15,hypertension;diabetes,glucose:120;hemoglobin:13.5,chest_xray.jpg,normal,low
+P002,62,F,2024-01-16,asthma;obesity,glucose:145;hemoglobin:12.8,ct_scan.jpg,pneumonia,high
+P003,38,M,2024-01-17,smoking_history,glucose:95;hemoglobin:14.2,lung_mri.jpg,healthy,low
+P004,71,F,2024-01-18,heart_disease;arthritis,glucose:118;hemoglobin:13.1,echocardiogram.jpg,cardiomyopathy,critical
+P005,55,M,2024-01-19,hypertension,glucose:102;hemoglobin:13.9,brain_mri.jpg,normal,low

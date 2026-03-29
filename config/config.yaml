@@ -1,0 +1,46 @@
+# Multimodal Healthcare Model Configuration
+
+# Data settings
+data:
+  path: ./data
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  batch_size: 32
+  num_workers: 4
+
+# Model architecture
+model:
+  name: multimodal_healthcare
+  tabular_dim: 10
+  hidden_dim: 128
+  num_classes: 2
+  dropout_rate: 0.3
+
+# Training settings
+training:
+  epoch: 50
+  learning_rate: 0.001
+  optimizer: adam
+  loss_function: cross_entropy
+  scheduler: cosine
+  weight_decay: 1e-5
+
+# Evaluation
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+    - auc_roc
+  confidence_threshold: 0.7
+
+# Device
+device: cuda  # cuda or cpu
+
+# Checkpoints
+checkpoint:
+  directory: ./checkpoints
+  save_frequency: 5  # every N epochs
+  keep_best: true
